@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+    <head>
+        <title>2048 game</title>
+        <script src="./my2048.js"></script>
+        <style>
+            .numcell {
+                width: 100px;
+                height: 100px;
+                border: 1px black solid;
+                display: inline-block;
+                vertical-align: middle;
+                text-align: center;
+                line-height: 100px;
+                transition: opacity 700ms;
+            }
+            .newcell {
+                opacity: 0.1;
+            }
+            .cellrow {
+                width: 410px;
+                overflow-x: auto;
+            }
+            .gamediv {
+            }
+            .numcell.nc-2 {
+                background-color: #ffaaaa;
+            }
+            .numcell.nc-4 {
+                background-color: #aaffaa;
+            }
+            .numcell.nc-8 {
+                background-color: #aaaaff;
+            }
+            .numcell.nc-16 {
+                background-color: #ffaaff;
+            }
+            .numcell.nc-32 {
+                background-color: #aaffff;
+            }
+            .numcell.nc-64 {
+                background-color: #ffffaa;
+            }
+            .numcell.nc-128 {
+                background-color: #aaaaaa;
+            }
+            .numcell.nc-256 {
+                background-color: #88aaaa;
+            }
+            .numcell.nc-512 {
+                background-color: #aa88aa;
+            }
+            .numcell.nc-1024 {
+                background-color: #aaaa88;
+            }
+            .numcell.nc-2048 {
+                background-color: #88aa88;
+            }
+            .numcell.nc-4096 {
+                background-color: #aa8888;
+            }
+            .numcell.nc-8912 {
+                background-color: #8888aa;
+            }
+            .numcell.nc-16384 {
+                background-color: #888888;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="gamediv">
+            <div id="row-0" class="cellrow">
+                <div class="numcell">&nbsp;</div>
+                <div class="numcell">&nbsp;</div>
+                <div class="numcell">&nbsp;</div>
+                <div class="numcell">&nbsp;</div>
+            </div>
+            <div id="row-1" class="cellrow">
+                <div class="numcell">&nbsp;</div>
+                <div class="numcell">&nbsp;</div>
+                <div class="numcell">&nbsp;</div>
+                <div class="numcell">&nbsp;</div>
+            </div>
+            <div id="row-2" class="cellrow">
+                <div class="numcell">&nbsp;</div>
+                <div class="numcell">&nbsp;</div>
+                <div class="numcell">&nbsp;</div>
+                <div class="numcell">&nbsp;</div>
+            </div>
+            <div id="row-3" class="cellrow">
+                <div class="numcell">&nbsp;</div>
+                <div class="numcell">&nbsp;</div>
+                <div class="numcell">&nbsp;</div>
+                <div class="numcell">&nbsp;</div>
+            </div>
+        </div>
+    </body>
+</html>
